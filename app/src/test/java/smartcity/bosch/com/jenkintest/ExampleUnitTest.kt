@@ -14,4 +14,14 @@ class ExampleUnitTest {
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
     }
+
+    @Test
+    @Throws(Exception::class)
+    fun subscription_isCorrect() {
+
+        //WE intentionally made the string null
+        val myName: String? = null
+
+        assertNull(myName)
+    }
 }
